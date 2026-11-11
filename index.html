@@ -1239,14 +1239,14 @@ insStop('gua',{k:'rio',hint:['a generous heart','慷慨的心'],sky:['#6ab8f0','
 bg(q,r){poly(q,[[0,112],[10,70],[26,56],[44,70],[60,112]],'#6a7a6a');poly(q,[[70,112],[120,90],[160,66],[200,90],[250,112]],'#3f7f4a');poly(q,[[110,112],[160,80],[210,112]],'#4a8a52');
 const D=26,P=(pts,c,dx=0,dy=0)=>poly(q,pts.map(p=>[p[0]+dx,p[1]+dy+D]),c);
 q.fillStyle='rgba(255,255,240,.28)';q.beginPath();q.arc(160,22+D,30,0,7);q.fill();
-const BD=[[[152,13],[168,13],[173,36],[147,36]],[[152,14],[121,17],[115,23],[121,23],[152,21]],[[168,14],[199,17],[205,23],[199,23],[168,21]]];
-[[-1,0],[1,0],[0,1],[0,-1]].forEach(o=>BD.forEach(bd=>P(bd,'#56666e',o[0],o[1])));r(154,1+D,12,14,'#56666e');r(113,20+D,9,7,'#56666e');r(198,20+D,9,7,'#56666e');r(145,43+D,30,7,'#56666e');
+const BD=[[[155,13],[165,13],[167,36],[153,36]],[[155,14],[122,17],[117,21],[122,21],[155,19]],[[165,14],[198,17],[203,21],[198,21],[165,19]]];
+[[-1,0],[1,0],[0,1],[0,-1]].forEach(o=>BD.forEach(bd=>P(bd,'#56666e',o[0],o[1])));r(156,1+D,8,14,'#56666e');r(114,18+D,9,6,'#56666e');r(197,18+D,9,6,'#56666e');r(145,43+D,30,7,'#56666e');
 r(146,43+D,28,5,'#b8bcb4');r(148,36+D,24,8,'#d4d8d0');r(148,36+D,24,2,'#ecf0e8');
-BD.forEach(bd=>P(bd,'#f4f6f0'));P([[161,13],[168,13],[173,36],[163,36]],'#cdd2c8');
-r(158,17+D,1,19,'#c0c6bc');r(155,22+D,1,14,'#d4d8d0');
-P([[121,23],[152,21],[152,26],[126,27]],'#c4cac0');P([[199,23],[168,21],[168,26],[194,27]],'#b8beb4');
-r(114,21+D,5,5,'#f4f6f0');r(201,21+D,5,5,'#f4f6f0');
-r(157,3+D,6,10,'#f4f6f0');r(156,2+D,8,3,'#cfd4ca');r(161,5+D,2,8,'#cdd2c8');r(158,12+D,4,3,'#d8dcd4');
+BD.forEach(bd=>P(bd,'#f4f6f0'));P([[161,13],[165,13],[167,36],[162,36]],'#cdd2c8');
+r(159,17+D,1,19,'#c0c6bc');r(156,22+D,1,14,'#d4d8d0');
+P([[122,21],[155,19],[155,22],[126,23]],'#c4cac0');P([[198,21],[165,19],[165,22],[194,23]],'#b8beb4');
+r(115,18+D,4,4,'#f4f6f0');r(201,18+D,4,4,'#f4f6f0');
+r(158,3+D,4,10,'#f4f6f0');r(157,2+D,6,3,'#cfd4ca');r(160,5+D,2,8,'#cdd2c8');r(159,12+D,2,3,'#d8dcd4');
 for(let i=0;i<26;i++){const x=i<13?4+i*7:224+(i-13)*7,y=84+(i*13)%22;r(x,y,6,5,['#e8b44c','#d8503a','#4a8ad8','#f4efe4','#6ab86a'][i%5])}r(262,84,58,28,'#3a7ac8');r(262,84,58,2,'#7ab4e8')},
 fx(s){for(let i=0;i<3;i++){const x=((T*6+i*110)%380)-30;g.globalAlpha=.75;R(x,50+i*12,34,6,'#fff');R(x+6,46+i*12,22,5,'#fff');g.globalAlpha=1}tHud(cz('Kindness','善行'),FS.gv.filter(Boolean).length,4)},
 ob:[O([160,126],[120,0,200,62],['Christ the Redeemer','基督救世主像'],{st:1,c:1,tt:['Christ the Redeemer','基督救世主像'],tx:[['High on Corcovado Mountain above Rio de Janeiro, Christ the Redeemer opens his arms over the city. The Art Deco statue is about 30 metres tall and was finished in 1931.','在里約熱內盧上方的科爾科瓦多山頂，基督救世主像張開雙臂擁抱整座城市。這座裝飾藝術風格的雕像高約三十公尺，1931 年完成。'],['His open arms are an invitation: come as you are. Below him, four neighbours need a little kindness today.','他張開的雙臂是邀請：照你原來的樣子來。他的腳下，有四位鄰人今天需要一點善意。']],v:['Matthew 25:40','Whatever you did for one of the least of these brothers and sisters of mine, you did for me.','你們對我這些最小兄弟中的一個所做的，就是對我做的。'],it:['a Corcovado postcard','科爾科瓦多明信片']}),
@@ -1551,4 +1551,55 @@ r(262,92,12,20,'#5a3a22');poly(q,[[262,92],[268,84],[274,92]],'#5a3a22');r(267,9
 NG.ob.push(O([272,126],[238,6,310,112],['Oura Church','大浦天主堂'],{c:1,tt:['Oura Church','大浦天主堂'],tx:[['Oura Church was built in 1864 by French missionaries and dedicated to the Twenty-Six Martyrs of Japan. This white wooden Gothic church is the oldest surviving Christian church in Japan.','大浦天主堂由法國傳教士於 1864 年建成，獻給日本二十六位殉道聖人。這座白色的木造哥德式教堂，是日本現存最古老的基督教教堂。'],['It was here, on 17 March 1865, that hidden Christians from Urakami whispered to the priest, “Our hearts are the same as yours.”','1865 年 3 月 17 日，浦上的潛伏基督徒就在這裡對神父低聲說：「我們的心和你們一樣。」']],v:['Matthew 5:10','Blessed are those who are persecuted for the sake of righteousness, for theirs is the kingdom of heaven.','為正義而受迫害的人是有福的，因為天國是他們的。'],it:['an Oura Church holy card','大浦天主堂聖像卡']}));
 PHO.nag.push(['Ōura Church, Nagasaki','長崎大浦天主堂','Ōura_Church'])}
 </script>
+<script>
+/* ===== Added: visitor count, slimmer Christ, Santiago visuals, parkour and kneeling markers, garden pets ===== */
+const sgn=(tx,x,y,col)=>{g.font='bold 6px Georgia,serif';const w=Math.ceil(g.measureText(tx).width)+8;x=Math.round(x-w/2);g.fillStyle='rgba(20,14,28,.88)';g.fillRect(x,y,w,9);g.fillStyle=col||'#e8b44c';g.fillRect(x,y,w,1);g.fillRect(x,y+8,w,1);g.fillRect(x,y,1,9);g.fillRect(x+w-1,y,1,9);g.fillStyle='#f4d58a';g.textAlign='left';g.fillText(tx,x+4,y+6.6)};
+const arr=(x,y,up)=>{const c='#f0cf6a';if(up){R(x,y+6,1,1,c);R(x-1,y+5,3,1,c);R(x-2,y+4,5,1,c);R(x-3,y+3,7,1,c);R(x-1,y+7,3,5,c)}else{R(x-1,y,3,5,c);R(x-3,y+5,7,1,c);R(x-2,y+6,5,1,c);R(x-1,y+7,3,1,c);R(x,y+8,1,1,c)}};
+/* Santiago: the golden St. James to hug, the Camino marker, and an arrow for the incense burner */
+{const _s3=PSg.fx;PSg.fx=function(){_s3();
+R(200,155,32,3,'#a8a090');R(204,152,24,3,'#b8b0a0');R(202,122,28,32,'#8a6a1c');R(204,124,24,28,'#c9962a');R(207,128,18,22,'#5a3a10');R(212,138,8,13,'#f0cf6a');R(213,129,6,7,'#f4d58a');R(210,127,12,2,'#f0cf6a');R(215,124,2,3,'#fff6c8');R(208,138,5,3,'#f0cf6a');R(219,138,5,3,'#f0cf6a');R(224,126,1,26,'#8a5a1c');R(222,134,4,5,'#a8803a');if(Math.sin(T*3)>.7)R(220,130,1,1,'#fff');
+R(264,154,16,3,'#8a8478');R(266,138,12,17,'#a8a090');R(264,136,16,3,'#b8b0a0');R(268,142,8,8,'#2c4f9e');R(270,144,4,4,'#f0cf6a');R(271,142,2,1,'#f0cf6a');R(271,150,2,1,'#f0cf6a');R(268,146,1,2,'#f0cf6a');R(275,146,1,2,'#f0cf6a');
+const b=Math.round(Math.sin(T*5)*2);arr(92,150+b,0);sgn(cz('SWING IT!','盪一盪！'),92,138+b,'#f0cf6a')}}
+/* Florence: where the parkour starts */
+{const PFl=PS.find(s=>s.k=='flo'),pko=PFl.ob.find(o=>o.g=='parkour');pko.hit=[110,128,148,158];pko.ip=[128,151];pko.l=['START PARKOUR: climb the dome!','開始跑酷：攀上圓頂！'];
+const _f2=PFl.fx;PFl.fx=function(){_f2();const p=Math.sin(T*3);g.strokeStyle='rgba(240,207,106,'+(.6+p*.3)+')';g.lineWidth=2;g.beginPath();g.ellipse(128,149,13+p*2,6+p,0,0,7);g.stroke();g.fillStyle='rgba(240,207,106,.22)';g.beginPath();g.ellipse(128,149,13,6,0,0,7);g.fill();arr(128,126+Math.round(Math.sin(T*5)*2),0);sgn(cz('START PARKOUR','開始跑酷'),128,114,'#f0cf6a')}}
+/* Fatima: where to kneel */
+{const _f3=PF.fx;PF.fx=function(){_f3();if(FS.kn==0){for(let k=0;k<4;k++){const y=200-((T*20+k*20)%80);g.globalAlpha=Math.max(0,Math.min(1,(y-126)/30));R(159,y,2,1,'#a8803a');R(157,y+1,6,1,'#a8803a');R(155,y+2,10,1,'#a8803a');g.globalAlpha=1}
+arr(160,172+Math.round(Math.sin(T*5)*2),1);sgn(cz('KNEEL HERE','在此跪行'),160,189,'#f0cf6a');sgn(cz('then watch the sun dance','然後看太陽舞動'),160,199,'#a8803a')}}}
+/* Garden: St. Francis, a golden retriever and a fat black cat */
+FS.pets=0;const HRT=[];
+function stSheet(){me.state='pray';sheet(cz('St. Francis of Assisi','亞西西的聖方濟各'),`<p class="pr">${cz('St. Francis (1181–1226) loved all of God’s creatures and is the patron saint of animals and of the environment. Many parishes bless pets on his feast day, 4 October. His Canticle of the Creatures praises God through sun, moon, water and every living thing.','聖方濟各（1181–1226）愛天主所造的一切受造物，是動物與環保的主保。許多堂區在他的慶日（10 月 4 日）為寵物祝福。他的《太陽歌》藉著太陽、月亮、水與一切生物讚美天主。')}</p><p class="sm"><i>${cz('Look at the birds of the air… your heavenly Father feeds them.','你們看看天上的飛鳥……你們的天父還是養活牠們。')}</i> — Matthew 6:26</p><p class="sm">${cz('Beside him, a golden retriever and a big black cat are waiting to be petted.','在他身旁，一隻金毛尋回犬和一隻黑色大胖貓正等著被摸摸。')}</p>`+B(cz('Sign of the Cross','劃十字聖號'),'sign()','on')+B(cz('Light a candle','點一支蠟燭'),'candles()'))}
+const PET=[['Honey the golden retriever','金毛尋回犬 Honey',['Honey leans into your hand, and her tail thumps the grass.','She flops over for a belly rub. Best day ever!','She drops a stick at your feet and grins.'],['Honey 靠著你的手，尾巴拍打著草地。','她翻過身要你摸肚子。今天太棒了！','她把一根樹枝放在你腳邊，笑得開心。']],['Licorice the fat black cat','黑色大胖貓 Licorice',['Licorice is big, round and soft as a cushion. He rumbles a deep purr.','He stretches, then flops over like a loaf of bread.','He blinks slowly at you: a cat’s way of saying “I love you”.'],['Licorice 又大又圓，軟得像坐墊。他發出低沉的呼嚕聲。','他伸個懶腰，然後像一條麵包一樣趴下。','他慢慢向你眨眼：這是貓咪說「我愛你」的方式。']]];
+function petSheet(k){const P=PET[k],i=Math.random()*3|0;me.state='stand';FS.pets++;chime(1);[0,1,2].forEach(n=>HRT.push({x:k?226+n*5:254+n*5,y:210,t:T+n*.25}));sheet(cz(P[0],P[1]),`<p class="pr">${cz(P[2][i],P[3][i])}</p><p class="sm">${cz('Pets given today: '+FS.pets,'今天摸了 '+FS.pets+' 次')}</p>`+B(cz('Pet again','再摸一下'),`petSheet(${k})`,'on')+B(cz('Done','好了'),'closeSheet()'))}
+GOBJ.push(mkl({id:'g_sf',ip:[270,233],hit:[276,200,300,236],l:['St. Francis of Assisi statue','亞西西的聖方濟各雕像']}),mkl({id:'g_dog',ip:[252,235],hit:[238,212,266,232],l:['Pet the golden retriever','摸摸金毛尋回犬']}),mkl({id:'g_cat',ip:[222,235],hit:[208,214,238,234],l:['Pet the fat black cat','摸摸黑色大胖貓']}));
+GBK.push([278,214,298,234],[243,218,265,230],[215,224,229,232]);
+const inGarden=()=>GD.on&&!PD.on&&!LD.on&&!FD.on&&!CD.on&&!IN.on;
+const SFX=288,SFY=234,DOG={x:254,y:226,bv:0},CAT={x:223,y:230,bv:0},BRD=[{x:SFX+9,y:SFY-28,fl:0,k:0,c:'#8a6a4a',b:'#e8dcc0'},{x:SFX-8,y:SFY-8,fl:0,k:1,c:'#4a8ad8',b:'#f4efe4'}];
+const ez=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+function pdist(a){return Math.hypot(me.x-a.x,me.y-(a.y+4))}
+function bird(x,y,fly,flap,dir,c,b){const f=fly?(Math.sin(T*28)>0?1:0):0;R(x-2,y-1,5,3,c);R(x-2,y+1,4,1,b);R(x-4+(dir>0?5:0),y-2,3,3,c);R(x-6+(dir>0?9:0),y-1,2,1,'#e8a84c');R(x+(dir>0?-4:3),y,3,1,c);R(x-1,y-3-f*2,3,2,fly?'#6a4a2a':c);if(fly)R(x-1,y+2+f,3,1,'#6a4a2a');R(x+(dir>0?1:-3),y-1,1,1,'#1a1a1a')}
+function dogSpr(x,y,th,pant){g.save();g.translate(x,y);g.rotate(th);const wag=Math.sin(T*(th>1?16:9))*1.6,leg=th>2.2?Math.sin(T*10)*1.2:0;
+R(-11,-5,22,10,'#d8a448');R(-8,2,14,3,'#f2dca0');R(-11,-1,5,5,'#ecc878');R(-17,-9,9,8,'#e0b058');R(-16,-8,3,6,'#a87a30');R(-20,-5,4,4,'#e8bc68');R(-21,-5,2,2,'#2a1a10');R(-14,-7,1,1,'#2a1a10');
+R(-9,4,4,5+leg,'#c89438');R(-4,4,3,5-leg,'#c89438');R(5,4,4,5+leg,'#c89438');R(10,-6+wag,6,3,'#e8bc68');if(pant)R(-19,-1,2,3,'#e8707a');g.restore()}
+function catSpr(x,y,th){g.save();g.translate(x,y);g.rotate(th);const tw=Math.sin(T*2.4)*1.2,bl=Math.sin(T*.9)>.96,pw=th>2.2?Math.sin(T*9)*1.2:0;
+R(-7,-3,14,6,'#17171c');R(-6,-4,12,8,'#17171c');R(-4,1,8,3,'#2c2c36');R(-4,-9,8,6,'#17171c');R(-4,-11,2,2,'#17171c');R(2,-11,2,2,'#17171c');if(!bl){R(-3,-7,2,1,'#f0cf6a');R(1,-7,2,1,'#f0cf6a')}R(-1,-5,2,1,'#e88a9a');R(-5,3+pw,3,2,'#0e0e12');R(2,3-pw,3,2,'#0e0e12');R(6,-3+tw,2,5,'#17171c');g.restore()}
+{const _d7=draw;draw=function(){_d7();if(!inGarden())return;
+const sx=SFX,sy=SFY;R(sx-9,sy-6,18,6,'#9a9a92');R(sx-9,sy-6,18,1,'#b8b8b0');R(sx-5,sy-26,10,20,'#8a8a82');R(sx-5,sy-15,10,1,'#c8c8c0');R(sx-4,sy-31,8,7,'#a8a8a0');R(sx-5,sy-32,10,3,'#7a7a72');R(sx-10,sy-23,20,2,'#8a8a82');R(sx-3,sy-6,1,1,'#fff');
+[DOG,CAT].forEach((a,i)=>{const near=pdist(a)<(i?30:34);a.bv+=((near?1:0)-a.bv)*.07;if(Math.abs(a.bv-(near?1:0))<.01)a.bv=near?1:0});
+const dth=ez(DOG.bv)*Math.PI,cth=ez(CAT.bv)*Math.PI;dogSpr(DOG.x,DOG.y-(DOG.bv>.5?1:0),dth,Math.sin(T*8)>0&&DOG.bv<.5);catSpr(CAT.x,CAT.y-(CAT.bv>.5?0:1),cth);
+if(DOG.bv>.95&&Math.sin(T*3)>.9)HRT.push({x:DOG.x-4,y:DOG.y-14,t:T});if(CAT.bv>.95&&Math.sin(T*2.6)>.92)HRT.push({x:CAT.x-2,y:CAT.y-12,t:T});
+const dn=Math.hypot(me.x-sx,me.y-(sy-12)),fly=dn<56;BRD.forEach((bd,i)=>{let tx,ty;if(fly){const a=T*(2.6+i*.5)+i*3.1;tx=me.x+Math.cos(a)*(13+i*4);ty=me.y-22+Math.sin(a*1.5)*(7+i*2)}else{tx=bd.x0!=null?bd.x0:bd.x;ty=bd.y0!=null?bd.y0:bd.y;if(bd.x0==null){bd.x0=bd.x;bd.y0=bd.y}tx=bd.x0+(bd.k?Math.round(Math.sin(T*1.6)*3):0);ty=bd.y0}
+if(bd.x0==null){bd.x0=bd.x;bd.y0=bd.y}const dx=tx-bd.x,dy=ty-bd.y,mv=Math.hypot(dx,dy);bd.x+=dx*.1;bd.y+=dy*.1;if(fly&&!bd.fl&&window.ac&&tn)try{const t=ac.currentTime,o=ac.createOscillator(),gn=ac.createGain();o.frequency.setValueAtTime(3200+i*500,t);o.frequency.exponentialRampToValueAtTime(4400,t+.07);gn.gain.setValueAtTime(.02,t);gn.gain.exponentialRampToValueAtTime(.0001,t+.1);o.connect(gn);gn.connect(mg);o.start(t);o.stop(t+.12)}catch(e){}
+bd.fl=fly;bird(Math.round(bd.x),Math.round(bd.y),mv>1.5||fly,0,dx>=0?1:-1,bd.c,bd.b)});
+for(let i=HRT.length-1;i>=0;i--){const hh=HRT[i],d=T-hh.t;if(d>1.8){HRT.splice(i,1);continue}if(d<0)continue;g.globalAlpha=1-d/1.8;const hx=Math.round(hh.x+Math.sin(d*4)*2),hy=Math.round(hh.y-d*14);R(hx,hy,2,2,'#e8567a');R(hx+3,hy,2,2,'#e8567a');R(hx,hy+1,5,2,'#e8567a');R(hx+1,hy+3,3,1,'#e8567a');R(hx+2,hy+4,1,1,'#e8567a');g.globalAlpha=1}}}
+{const _a12=act;act=function(o){if(o&&o.id=='g_sf'){me.tx=null;me.pend=null;stSheet()}else if(o&&o.id=='g_dog'){me.tx=null;me.pend=null;petSheet(0)}else if(o&&o.id=='g_cat'){me.tx=null;me.pend=null;petSheet(1)}else _a12(o)}}
+/* Visitor count on the entry page */
+{const VCL={en:'Visitors',fr:'Visiteurs',es:'Visitantes',pt:'Visitantes',zt:'訪客',zs:'访客',ja:'訪問者',ko:'방문자',tl:'Mga bisita',it:'Visitatori'};let vcN=null,vcLocal=0;
+const el=document.createElement('div');el.id='vc2';el.style.cssText='position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:14px;font-size:13px;font-style:italic;color:var(--dim)';$('#intro').appendChild(el);
+try{vcLocal=(+localStorage.getItem('nave_visits')||0)+1;localStorage.setItem('nave_visits',vcLocal)}catch(e){}
+window.renderVC=()=>{el.textContent=vcN!=null?'👥 '+(VCL[L]||VCL.en)+': '+vcN:(vcLocal?'👥 '+(VCL[L]||VCL.en)+': '+vcLocal:'')};
+const _sl7=setLang;setLang=function(l){_sl7(l);renderVC()};renderVC();
+let tr=0;const iv=setInterval(()=>{tr++;if(dbh){clearInterval(iv);try{dbh.collection('visits').onSnapshot(s=>{vcN=s.docs.length;renderVC()},()=>{});const k='nave_vis_'+uid;let seen=0;try{seen=localStorage.getItem(k)}catch(e){}if(uid&&!seen)dbh.collection('visits').doc(uid).set({t:Date.now()}).then(()=>{try{localStorage.setItem(k,'1')}catch(e){}}).catch(()=>{})}catch(e){}}else if(tr>60)clearInterval(iv)},250)}
+</script>
+<script>PSg.ob[1].hit=[84,40,114,152];</script>
 </body></html>
